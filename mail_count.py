@@ -18,11 +18,8 @@ n_days=len(days)
 fig,ax=plt.subplots(figsize=(8,6))
 bar_width=0.1
 x=np.arange(n_intervals)
-print(x)
-print(range(n_days))
 
 for i in range(n_days):
-    print(email_counts[i])
     ax.bar(x+i*bar_width,email_counts[i],width=bar_width,label=days[i])
 
 ax.set_xlabel('Time intervals')
